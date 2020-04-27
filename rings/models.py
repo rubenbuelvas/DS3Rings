@@ -14,7 +14,7 @@ class Ring(models.Model):
     name = models.CharField(max_length=100)
     location = models.ForeignKey(Location, blank=True, on_delete=models.DO_NOTHING)
     how_to_get = models.TextField(blank=True, default='')
-    image = models.ImageField(upload_to='images')
+    image = models.ImageField(upload_to='images', blank=True)
     user = models.ManyToManyField(User, blank=True)
 
     def __str__(self):
