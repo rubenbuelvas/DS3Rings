@@ -1,5 +1,15 @@
 {% extends "rings/base.html" %}
 {% block title %}List{% endblock title %}
 {% block content %}
-    
+    {% for ring in rings %}
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2" href="#">{{ ring.name }}</a>
+                    <small class="text-muted">{{ ring.location }}</small>
+                </div>
+                    <img src="{{ ring.image.url }}" alt="">
+            </div>
+        </article>
+    {% endfor %}
 {% endblock content %}
