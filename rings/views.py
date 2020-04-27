@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return render(request, 'rings/index.html')
+    return render(request, 'rings/home.html')
