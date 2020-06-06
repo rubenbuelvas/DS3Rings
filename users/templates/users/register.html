@@ -7,6 +7,7 @@
     <div class="card_container">
         <div class="signup-content">
             <form method="POST" id="signup-form" class="signup-form">
+                {% csrf_token %}
                 <h2>Sign up</h2>
                 <p class="desc">Welcome to <span>DS3Rings</span></p>
                 <div class="form-group">
