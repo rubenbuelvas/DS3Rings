@@ -133,13 +133,29 @@ display-flex {
     background-position: center center;
     overflow: hidden; }
   
-  .signup-content {
+  .login-content {
     width: 562px;
     height: 503px;
     margin-right: 0px;
     background: rgba(177, 135, 77, 0.75);
     float: right; }
   
+  .signup-content {
+    width: 562px;
+    height: 100vh;
+    background: rgba(177, 135, 77, 0.75);
+    margin: auto;
+   }
+
+  .signup-content li{
+     color: white;
+  }
+  
+  .signup-content  small{
+    color: white !important;
+    display: none !important;
+ }
+
   .signup-form {
     padding: 54px 80px 36px 55px; }
   

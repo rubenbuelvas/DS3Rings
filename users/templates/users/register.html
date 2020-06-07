@@ -1,28 +1,18 @@
 {% extends "rings/base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block title %}Sign up{% endblock title %}
 {% block content %}
 <div class="main">
 
-    <div class="card_container">
+    <div class="container">
         <div class="signup-content">
             <form method="POST" id="signup-form" class="signup-form">
                 {% csrf_token %}
                 <h2>Sign up</h2>
                 <p class="desc">Welcome to <span>DS3Rings</span></p>
                 <div class="form-group">
-                    <input type="text" class="form-input" name="name" id="name" placeholder="Nickname"/>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-input" name="email" id="email" placeholder="Email"/>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-input" name="password" id="password" placeholder="Password"/>
-                    <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-input" name="password" id="password" placeholder="Repeat password"/>
-                    <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                    {{ form|crispy }}
                 </div>
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
