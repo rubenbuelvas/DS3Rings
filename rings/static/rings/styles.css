@@ -135,7 +135,7 @@ display-flex {
   
   .login-content {
     width: 562px;
-    height: 503px;
+    min-height: 503px;
     margin-right: 0px;
     background: rgba(177, 135, 77, 0.75);
     float: right; }
