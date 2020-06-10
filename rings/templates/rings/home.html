@@ -1,8 +1,17 @@
 {% extends "rings/base.html" %}
 {% block title %}List{% endblock title %}
+{% block nav %}
+    <nav class="navbar navbar-dark bg-dark">
+        <button type="button" class="btn btn-outline-success">Save changes</button>
+        <button type="button" class="btn btn-outline-danger">Logout</button>
+    </nav>
+{% endblock nav %}
 {% block content %}
     {% if user.is_authenticated %}
     <div class="main">
+        <div style="height: 2rem;">
+
+        </div>
         <div class="container">
             {% for ring in rings %}
                 <div class="card ring-card">

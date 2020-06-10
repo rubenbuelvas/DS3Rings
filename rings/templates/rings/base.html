@@ -17,6 +17,7 @@
     <title>DS3Rings | {% block title %}{% endblock title %}</title>
   </head>
   <body>
+    {% block nav %}{% endblock nav %}
       <div class="container">
         {% if messages %}
           {% for message in messages %}
