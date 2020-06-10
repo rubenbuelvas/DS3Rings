@@ -2,19 +2,19 @@
 {% block title %}List{% endblock title %}
 {% block content %}
     {% if user.is_authenticated %}
+    <div class="main">
         <div class="container">
-
-        </div>
-        {% for ring in rings %}
-            <article class="media content-section">
-                <div class="media-body">
-                    <div class="article-metadata">
-                        <a class="mr-2" href="#">{{ ring.name }}</a>
-                        <small class="text-muted">{{ ring.location }}</small>
-                    </div>
+            {% for ring in rings %}
+                <div class="card ring-card">
+                    <div class="card-body">
                         <img src="{{ ring.image.url }}" alt="">
+                        <h5 class="card-title">{{ ring.name }}</h5>
+                        <p class="card-text">This ring can be found in {{ ring.location }}.</p>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    </div>
                 </div>
-            </article>
-        {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
     {% endif %}
 {% endblock content %}
