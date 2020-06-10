@@ -3,27 +3,25 @@
 {% load crispy_forms_tags %}
 {% block title %}Login{% endblock title %}
 {% block content %}
-<div class="main">
-
-    <div class="card_container">
-        <div class="login-content">
-            <form method="POST" id="signup-form" class="signup-form">
-                {% csrf_token %}
-                <h2>Log in</h2>
-                <p class="desc">Welcome to <span>DS3Rings</span></p>
-                <div class="form-group">
-                    {{ form|crispy }}
-                </div>
-                <div class="form-group">
-                    <input type="submit" name="submit" id="submit" class="form-submit submit" value="Log in"/>
-                    <a href="register/" class="submit-link submit">Sign up</a>
-                </div>
-                <div class="form-group">
-                    <a href="#" class="text-light">I forgot my password</a>
-                </div>
-            </form>
+    <div class="main">
+        <div class="card_container">
+            <div class="login-content">
+                <form method="POST" id="signup-form" class="signup-form">
+                    {% csrf_token %}
+                    <h2>Log in</h2>
+                    <p class="desc">Welcome to <span>DS3Rings</span></p>
+                    <div class="form-group">
+                        {{ form|crispy }}
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="submit" class="form-submit submit" value="Log in"/>
+                        <a href="register/" class="submit-link submit">Sign up</a>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="text-light">I forgot my password</a>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-
-</div>
 {% endblock content %}
