@@ -15,7 +15,7 @@ psycopg2==2.9.10
 psycopg2-binary==2.9.10
 pylint==2.4.4
 pytz==2019.3
-setuptools==80.9.0
+setuptools==83.0.0
 six==1.14.0
 sqlparse==0.5.3
 wheel==0.46.2
