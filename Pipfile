@@ -24,7 +24,7 @@ whitenoise = "5.0.1"
 wrapt = "1.11.2"
 django-crispy-forms = "1.9.1"
 django = "5.2.15"
-pillow = "12.2.0"
+pillow = "12.3.0"
 sqlparse = "0.5.4"
 
 [requires]
